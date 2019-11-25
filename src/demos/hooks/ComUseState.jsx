@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState ,useEffect} from "react";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -7,6 +7,7 @@ function App() {
   const handleClickCount = () => {
     console.log("handleClickCount");
     count++;
+    // setCount(count+1)
     return "";
   };
   const handleClickUser = () => {
@@ -20,8 +21,8 @@ function App() {
   };
 
   // useEffect(() => {
-  //   fetch();
-  // }, [user]);
+  //   console.log("object");
+  // }, [NaN]);
 
   return (
     <div>

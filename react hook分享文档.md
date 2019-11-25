@@ -209,6 +209,8 @@ useEffect(() => {
 >
 > 当Context Provider的value发生变化是，他的所有子级消费者都会rerender。
 
+`useContext` 的参数必须是 *context 对象本身*
+
 #### 2.2.5 useReducer
 
 > [`useState`](https://zh-hans.reactjs.org/docs/hooks-reference.html#usestate) 的替代方案。它接收一个形如 `(state, action) => newState` 的 reducer，并返回当前的 state 以及与其配套的 `dispatch` 方法。
@@ -269,7 +271,7 @@ useEffect(() => {
 
 > 返回一个 [memoized](https://en.wikipedia.org/wiki/Memoization) 回调函数。
 >
-> 该回调函数仅在某个依赖项改变时才会更新。当你把回调函数传递给经过优化的并使用引用相等性去避免非必要渲染
+> 该回调函数仅在某个依赖项改变时才会更新。当你把回调函数传递给经过优化的并使用引用相等性,去避免非必要渲染
 > useCallback(fn, deps) 相当于 useMemo(() => fn, deps)
 >
 > 所有回调函数中引用的值都应该出现在依赖项数组中
@@ -393,8 +395,6 @@ UI = F(props, state, context)
 - [useEffect 完整指南](https://overreacted.io/zh-hans/a-complete-guide-to-useeffect/)
 
 - [How to fetch data with React Hooks?](https://www.robinwieruch.de/react-hooks-fetch-data)
-
-- [怎么用 React Hooks 造轮子](https://github.com/dt-fe/weekly/blob/v2/080.%E7%B2%BE%E8%AF%BB%E3%80%8A%E6%80%8E%E4%B9%88%E7%94%A8%20React%20Hooks%20%E9%80%A0%E8%BD%AE%E5%AD%90%E3%80%8B.md)BD%B3%E5%AE%9E%E8%B7%B5%E3%80%8B.md)
 
 - [useEffect 完整指南](https://overreacted.io/zh-hans/a-complete-guide-to-useeffect/)
 

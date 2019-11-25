@@ -7,14 +7,14 @@ import React, { useEffect, useState } from "react";
 function App() {
   const [name, setName] = useState("Mary");
 
-  // if (typeof name !== "number") {
-  //   useEffect(function persistForm() {
-  //     localStorage.setItem("formData", name);
-  //   });
-  // }
+  if (typeof name !== "number") {
     useEffect(function persistForm() {
       localStorage.setItem("formData", name);
     });
+  }
+    // useEffect(function persistForm() {
+    //   localStorage.setItem("formData", name);
+    // });
 
   const [surname, setSurname] = useState("Poppins");
   useEffect(function updateTitle() {

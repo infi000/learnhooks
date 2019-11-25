@@ -6,13 +6,7 @@ const App = () => {
   const handleClick = () => {
     setCount(val => val + 1);
   };
-  // const timer = useInterval(() => {
-  //   console.log("定时器执行了");
-  // }, 1000);
-  // const handleKillTimer = () => {
-  //   console.log("定时器卸载了");
-  //   clearInterval(timer);
-  // };
+
 
   return (
     <div>
@@ -21,7 +15,6 @@ const App = () => {
       <div>
         <button onClick={handleClick}>click+1</button>
       </div>
-      <div>{/* <button onClick={handleKillTimer}>卸载定时器</button> */}</div>
     </div>
   );
 };

@@ -18,9 +18,9 @@ export default () => {
 
   return (
     <>
-      <ComRules />
+      {/* <ComRules /> */}
       {/* <ComUseState /> */}
-      {/* <ComUseEffect /> */}
+      <ComUseEffect />
       {/* <ComUseReducer /> */}
     </>
   );
